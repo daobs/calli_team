@@ -81,11 +81,11 @@ $(document).ready(function() {
 							EXHIBIT
 						</a>
 					</li>
-					<li class="menu">
+<%--					<li class="menu">
 						<a href="${root}/art/list" title="Artshop">
 							Artshop
 						</a>
-					</li>
+					</li>--%>
 					<li class="has-sub menu">
 						<a href="#" title="Board">
 							Board
