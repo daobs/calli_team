@@ -1,0 +1,9 @@
+.blog-area #none{
+    border: 10px solid #efefef;
+    padding: 27px 30px;
+    margin-bottom: 120px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #666;
+}

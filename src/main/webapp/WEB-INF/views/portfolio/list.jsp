@@ -37,67 +37,53 @@ function list(col){
 	url += "&nowPage=${nowPage}";
 	location.href = url;
 }
-function test(t){
-	types = t;
-}
-	
-$(document).ready(function() {
-	
 
-	$("#b").click(function() {
-		
-		
-		var url = 'json?col='+types;
+$("#b").click(function() {
+    alert('클릭');
+    portPolioList();
+});
 
-		$.ajax({
+
+function portPolioList(types) {
+    var url = 'json?col='+types;
+    $.ajax({
 //  			type : "POST", //"POST", "GET",
-			url : url,
-			dataType : "json", // 데이터 타입을 제이슨 꼭해야함, 다른방법도 2가지있음
-			contentType : "application/x-www-form-urlencoded; charset=UTF-8",
-			cache : false, // 이걸 안쓰거나 true하면 수정해도 값반영이 잘안댐
-			success : function(data) {
-				
-				$("#ajax").empty();
-				$("#list").hide();				
-				//alert(data[0].imgno);
- 				$("#ajax").append('<div class="row" id = "con"></div>');
-				for(var i=0;i<data.length;i++){
+        url : url,
+        dataType : "json", // 데이터 타입을 제이슨 꼭해야함, 다른방법도 2가지있음
+        contentType : "application/x-www-form-urlencoded; charset=UTF-8",
+        cache : false, // 이걸 안쓰거나 true하면 수정해도 값반영이 잘안댐
+        success : function(data) {
+
+            $("#ajax").empty();
+            $("#list").hide();
+            //alert(data[0].imgno);
+            $("#ajax").append('<div class="row" id = "con"></div>');
+            for(var i=0;i<data.length;i++){
 // 					$("#ajax").append("<p>"+data[i].imgno+"</p><br>");
 // 					$("#ajax").append("<p>"+data[i].title+"</p><br>");
 
-					$("#con").append('<div class="col-md-4 col-sm-6 col-xs-12" name ="1"><div>');
-					$('[name="1"]').eq(i).append('<div class="blog-warp-1 wow fadeInLeft" data-wow-delay="0.5s" name="2"></div>');
-					$('[name="2"]').eq(i).append('<a href="javascript:read('+data[i].imgno+')" name="3"></a>');
-					$('[name="3"]').eq(i).append('<div class="blog_imgg" name ="4"></div>');
-					$('[name="4"]').eq(i).append('<img src="${root}/images/img/storage/'+data[i].nail_img+'" />');
-					$('[name="2"]').eq(i).append('<div class="blog_content_warp" style="width: 300px; height: 100px;" name="5"></div>');
-					$('[name="5"]').eq(i).append('<h5 style="text-align: center; font-size: 20px; ">'+data[i].title+'</h5>');
+                $("#con").append('<div class="col-md-4 col-sm-6 col-xs-12" name ="1"><div>');
+                $('[name="1"]').eq(i).append('<div class="blog-warp-1 wow fadeInLeft" data-wow-delay="0.5s" name="2"></div>');
+                $('[name="2"]').eq(i).append('<a href="javascript:read('+data[i].imgno+')" name="3"></a>');
+                $('[name="3"]').eq(i).append('<div class="blog_imgg" name ="4"></div>');
+                $('[name="4"]').eq(i).append('<img src="${root}/images/img/storage/'+data[i].nail_img+'" />');
+                $('[name="2"]').eq(i).append('<div class="blog_content_warp" style="width: 300px; height: 100px;" name="5"></div>');
+                $('[name="5"]').eq(i).append('<h5 style="text-align: center; font-size: 20px; ">'+data[i].title+'</h5>');
 // 					$("#6").append('<a href="javascript:read("'+data[i].imgno+'")">'+ data[i].title+' </a>');
-					$('[name="5"]').eq(i).append('<p style="text-align: center;">'+data[i].subtitle+'</p>');
-					
-
-				}
-  				$("#ajax").append('<div class="bottom">${paging}</div>');
+                $('[name="5"]').eq(i).append('<p style="text-align: center;">'+data[i].subtitle+'</p>');
 
 
+            }
+            $("#ajax").append('<div class="bottom">${paging}</div>');
+        }, error : function(msg){
+            $("#ajax").empty();
+            $("#list").hide();
+            $("#ajax").append('<div class="row" id = "none">작품을 준비중에 있습니다.</div>');
+            //alert( "조회에 실패하였습니다. \n 확인후 다시 시도하세요.");
+        }
+    });
+}
 
-			
-			}, error : function(msg){
-				$("#ajax").empty();
-				$("#list").hide();
-				$("#ajax").append('<div class="row" id = "con">데이터가 없습니다.</div>');
-				//alert( "조회에 실패하였습니다. \n 확인후 다시 시도하세요.");
-
-			}
-		});
-		
-			
-		
-	
-	});
-});
-
-	
 	
 </script>
 
@@ -147,12 +133,12 @@ $(document).ready(function() {
 				
 				  <ul class="projects-titles2" id="b">
                     	
-                        <li style="font-size: 18px; font-family: '휴먼편지체';" onclick="test('')" >전체</li>
-                        <li style="font-size: 18px; font-family: '휴먼편지체';" onclick="test('logo')" >로고</li>
-                        <li style="font-size: 18px; font-family: '휴먼편지체';" onclick="test('adv')">광고</li>
-                        <li style="font-size: 18px; font-family: '휴먼편지체';" onclick="test('edit')">편집</li>
-                        <li style="font-size: 18px; font-family: '휴먼편지체';" onclick="test('art')">아트상품</li>
-                        <li style="font-size: 18px; font-family: '휴먼편지체';" onclick="test('event')">행사</li>
+                        <li style="font-size: 18px; font-family: '휴먼편지체';" onclick="portPolioList('')" >전체</li>
+                        <li style="font-size: 18px; font-family: '휴먼편지체';" onclick="portPolioList('logo')" >로고</li>
+                        <li style="font-size: 18px; font-family: '휴먼편지체';" onclick="portPolioList('adv')">광고</li>
+                        <li style="font-size: 18px; font-family: '휴먼편지체';" onclick="portPolioList('edit')">편집</li>
+                        <li style="font-size: 18px; font-family: '휴먼편지체';" onclick="portPolioList('art')">아트상품</li>
+                        <li style="font-size: 18px; font-family: '휴먼편지체';" onclick="portPolioList('event')">행사</li>
 <!--                         <li data-filter=".graphics">graphics</li> -->
 <!--                         <li data-filter=".development">development</li> -->
 <!--                         <li data-filter=".photoshop">photoshop</li> -->

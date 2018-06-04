@@ -45,6 +45,7 @@
 
 <!-- Main Style -->
 <link href="${root}/css/style.css" rel="stylesheet">
+<link href="${root}/css/obsStyle.css" rel="stylesheet">
 <link href="${root}/css/responsive.css" rel="stylesheet">
 
 <!--DEFAULT COLOR/ CURRENTLY USING , Replace Your Color-->
