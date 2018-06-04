@@ -44,10 +44,10 @@
 				<!-- Blog Area -->
 				
 				<div class="row projects-list">
-                        <div class="col-xs-12 wang">
+                        <div class="col-xs-12 wang" style="display: none">
                              <img src="${root}/images/intro/작가소개.jpg" >
                         </div>
-                        <div class="col-xs-12 oh">
+                        <div class="col-xs-12 oh" style="display: none">
                              <img src="${root}/images/intro/작가소개2.jpg" >
                         </div>
 				</div>
@@ -59,5 +59,24 @@
 	</div>
 	<!--  End : Blog Page Content
 ==================================================-->
+<script>
+    /*로딩시 첫번째 작가소개 활성화*/
+    $('.projects-list div').eq(0).show();
+
+    $('.projects-titles li').click(function () {
+        /*작가 클릭시 모든 작가 hide 후 해당 작가만 show*/
+        $('.projects-list div').hide();
+        $('.projects-list div').eq($(this).index()).show();
+
+        /*오문석 작가 선택시 */
+        if($('.projects-list div').eq(1).css('display')=="block"){
+            $('.projects-list div').eq($(this).index()).css('top','auto');
+            $('.projects-list').css('height','3200px');
+        }else{
+            $('.projects-list').css('height','5788px');
+        }
+    })
+    
+</script>
 
 
