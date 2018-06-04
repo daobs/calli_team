@@ -163,7 +163,7 @@
 								<a href="services.html"><i class="icon_link"></i></a>
 							</div>
 							<div class="service_info">
-								<h6>NH개성인삼농협 6년근 한송정 홍삼시리즈</h6>
+								<h6>NH개성인삼농협 6년근 한송정 홍삼시리즈ㄴㄴㄴㄴ</h6>
 								<p>
 									Client : 이드디자인 <br />
 									Calligraphy : 왕은실
