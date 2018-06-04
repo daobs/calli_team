@@ -1,0 +1,1094 @@
+/*          Responsive styles
+================================================== */
+
+@media only screen and (min-width: 1678px) and (max-width: 1923px) {
+
+
+
+
+}
+@media only screen and (min-width: 1390px) and (max-width: 1677px) {
+	
+	
+}
+/*                     Tablet Landscape
+=======================================================================================*/
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+/*--------------------------------------
+   Header And SLider
+----------------------------------------*/
+    
+.slider_home h2 {
+    letter-spacing: 2px;
+}
+.slide_bg_1 .col-sm-8 {
+    margin-left: 10%;
+}
+/*--------------------------------------
+    Team Section
+----------------------------------------*/
+
+.speaker_prev, .speaker_next {
+    bottom: 30.5%;
+}
+
+/*--------------------------------------
+    Why Choose Section
+----------------------------------------*/
+
+.servic_accrodin {
+    float: right;
+    padding: 94px 0px 44px 35px;
+}
+#accordion h2 {
+    padding: 20px 10px 27px 45px;
+}
+
+/*--------------------------------------
+   Pricing Section
+----------------------------------------*/
+.pricing_heading::before {
+    width: 50%;
+}
+
+/*--------------------------------------
+   video Section     
+----------------------------------------*/
+    
+    .play-video {
+        left: 50%;
+    }
+    .video-content p {
+        margin-left: 529px;
+    }
+    .video-content h2 {
+        font-size: 29px;
+    }
+	
+/*---- One Page v1----- */
+
+.header_top_bg .ban1_txt h3 {
+    letter-spacing: 2px;
+}
+
+/*---- Multipage v2----- */
+.get_started_v2 .col-md-6 {
+    width: 60%;
+}
+.cta_bottom_v2 h2 {
+    letter-spacing: 4px;
+    font-size: 30px;
+}
+
+/*---- single Page ----- */
+.single_service_page_content .single_service_consult i {
+    width: 100%;
+    padding: 0px;
+}
+.single_service_page_content .single_service_consult a {
+    float: none;
+    margin-top: 20px;
+}
+}
+/*                      Tablet Portrait
+=======================================================================================*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+	
+ /*--------------------------------------
+   Header And SLider
+----------------------------------------*/
+.top_location {
+    padding-right: 33px;
+}
+.header_quate_right {
+    display: none;
+}
+
+/*---- Slider----- */
+
+.slider_home h2 {
+    font-size: 37px;
+    letter-spacing: 2px;
+    line-height: 50px;
+}
+
+.base-header {
+    width: 61%;
+}
+.slide_bg_1 .col-sm-8 {
+    margin-left: 12%;
+}
+
+ /*--------------------------------------
+   About  Section
+----------------------------------------*/
+.about_bottom_img img:last-child {
+    display: none;
+}
+.about_bottom_img img:first-child {
+    position: relative;
+    right: 0px;
+    bottom: -4px;
+}
+.about-section {
+    padding-bottom: 80px;
+    padding-top: 59px;
+}
+.about_bottom_num {
+    top: 30%;
+}
+.about_bottom_list_warp {
+    margin-left: 0px;
+}
+
+
+ /*--------------------------------------
+   Service  Section
+----------------------------------------*/
+
+.service_section .base-header {
+    padding-bottom: 40px;
+	width: 50%;
+	text-align: center;
+
+}
+.service_section .base-header p::before, .service_section .base-header p::after {
+    display: block;
+}
+.service_section .more-link {
+    display: none;
+}
+
+ /*--------------------------------------
+   Get started Section
+----------------------------------------*/
+.get_started .get_started-text h2 {
+    line-height: 44px;
+}
+
+/*--------------------------------------
+    Team Section
+----------------------------------------*/
+.team_section {
+    padding-bottom: 170px;
+}
+
+.team_content > p {
+    margin-bottom: 16px;
+}
+.speaker_prev, .speaker_next {
+    bottom: 0%;
+    margin-bottom: -157px;
+}
+.speaker_next {
+    left: 50%;
+}
+.speaker_prev {
+    right: 50%;
+}
+
+/*--------------------------------------
+    blog Section
+----------------------------------------*/
+.blog-warp-1 img {
+    height: 180px
+}
+.blog_datee {
+    top: 0px;
+}
+
+/*--------------------------------------
+   Why Choose Section
+----------------------------------------*/
+.servic_accrodin {
+    float: right;
+    padding: 50px 40px 0px 40px;
+}
+.chooseus-section .base-header h3 {
+    margin-bottom: 5px;
+}
+
+/*--------------------------------------
+   Pricing  Section
+----------------------------------------*/
+
+.pricing_heading::before {
+    width: 48%;
+    height: 31px;
+    left: 99px;
+    bottom: 38px;
+}
+
+/*--------------------------------------
+   Facts  Section
+----------------------------------------*/
+.testi_social {
+    right: 8px;
+}
+
+.confacts-section {
+    padding-top: 10px;
+}
+
+.facts_wrapper {
+    padding: 30px 10px 10px 20px;
+    margin-right: 0px;
+}
+
+.funfact_wapr h3 {
+    letter-spacing: 1px;
+    font-size: 30px;
+}
+/*--------------------------------------
+   Contact  Section
+----------------------------------------*/
+.contact-form {
+    margin-top: 50px;
+}
+
+/*--------------------------------------
+   footer  Section
+----------------------------------------*/
+.footer-section .col-xs-1 {
+    padding-right: 10px;
+}
+.footer-section .widget p {
+    margin-left: -10px;
+}
+/*---- single Page ----- */
+.single_service_page_content .single_service_consult i {
+    width: 100%;
+    padding: 0px;
+}
+.single_service_page_content .single_service_consult a {
+    float: none;
+    margin-top: 20px;
+}
+.single_service_page_content {
+    padding-right: 0px;
+}
+
+/*---- One Page v1----- */
+
+.header_top_bg .col-sm-7 {
+    width: 83%;
+}
+ 
+/*---- Multipage v2----- */
+.navigation_two .header_logo {
+    float: none;
+    text-align: center;
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+
+.base_header_v2 {
+    padding-bottom: 0px;
+    width: 57% !important;
+    text-align: left;
+    overflow: hidden;
+    display: inline-block;
+}
+.base_header_v2 p::before, .base_header_v2 p::after {
+    display: none !important;
+}
+.base_header_v2 p {
+    padding-bottom: 20px;
+}
+
+/*---- service----- */
+.service_section_v2 {
+    padding-bottom: 80px;
+    padding-top: 83px;
+    background: #f6f8fa;
+}
+
+.service_section_v2 .base_header_v2 {
+    text-align: left;
+}
+.service_section_v2 .base_header_v2 p {
+    padding-bottom: 0px;
+    margin-bottom: 4px;
+}
+
+/*---- About ----- */
+.about_section_v2{
+    padding-bottom: 70px;
+    padding-top: 84px;
+}
+.about_section_v2 .about_list {
+    padding: 40px 20px 0px 0px;
+}
+.about_bottom_v2 .col-md-6 {
+    padding-left: 0;
+}
+
+.about_bottom_v2 .more-link {
+    margin-bottom: 20px;
+}
+.about_bottom_v2 .col-md-8 .col-md-6 {
+   width: 50%;
+float: left;
+
+}
+
+/*---- Work----- */
+.work_section_v2 {
+    padding-bottom: 83px;
+    padding-top: 80px;
+}
+
+
+/*---- Team----- */
+.team_section_v2 {
+    padding-top: 83px;
+}
+
+.team_section_v2 .col-sm-4 {
+    padding-left: 0;
+}
+.team_section_v2 .more-link {
+    margin-bottom: 40px;
+}
+
+/*---- Pricing----- */
+.pricing_section_v2 .pricing-box {
+    margin-top: 10px;
+}
+
+/*---- Blog----- */
+.blog_section_v2 .base_header_v2 {
+    text-align: left;
+}
+.blog_section_v2 .blog-warp-1 {
+    padding-left: 15px;
+}
+.blog_section_v2 .blog_content_warp {
+    padding: 0px 10px 20px 20px;
+}
+.pricing_section_v2 .col-sm-4 {
+    padding-left: 0;
+}
+/*---- Testimonials----- */
+.testimonials_section_v2 {
+    padding-top: 86px;
+}
+
+.testimonials_section_v2 .testimonial-box .col-lg-12, .testimonials_section_v2 .testimonial-box .col-lg-3  {
+    padding-left: 0;
+}
+
+.testimonials_section_v2 .more-link {
+    margin-bottom: 40px;
+}
+/*---- Call to action----- */
+.cta_bottom_v2 h2 {
+    float: none;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+.cta_bottom_v2 .text-right {
+    text-align: center;
+}
+/*---- Contact----- */
+.contact_section_v2 {
+    padding-top: 83px;
+}
+
+.contact_section_v2 .contact-form {
+    margin-top: 10px;
+}
+
+}
+
+
+/*                          Phone
+=======================================================================================*/
+
+@media only screen and (max-width: 767px) {
+    /*--------------------------------------
+   Header And SLider
+----------------------------------------*/
+
+ 
+	
+/*---- Slider----- */
+.single_slider h2 {
+    font-size: 30px;
+    line-height: 42px;
+    letter-spacing: 1px;
+    margin-top: -60px;
+}
+
+
+.single_slider {
+    font-size: 15px;
+}
+.slider_home .owl-nav {
+    margin-top:-60px;
+    text-align: center;
+}
+.slider_home .owl-nav div.owl-next, .slider_home .owl-nav div {
+    left: auto;
+    margin: 10px;
+    right: auto;
+}
+.slider_home .owl-nav div {
+    color: #fff;
+    display: inline-block;
+    position: relative;
+}
+.single_slider .slider_item_tbcell {
+    text-align:center;
+}
+.slider_btn_two {
+    margin-left: 0px;
+    margin-top: 10px !important;
+}
+
+/*---- End :Slider----- */
+
+
+.top_location {
+    margin-top: 30px;
+    width: 90%;
+}
+
+
+.header_quate_right {
+    float: left;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+.header-right {
+    float: none !important;
+    text-align: center;
+	padding-right: 0px;
+}
+
+.header-right > ul {
+    padding: 0 0 0 0;
+}
+
+
+/*----Strat:  Menu ----- */
+#navigation.small-screen ul {
+    margin-top: 13px;
+}
+ 
+    #navigation > ul > li > a {
+        padding: 16px 20px;
+    }
+    #navigation > ul > li.has-sub > a {
+        padding: 16px 20px;
+    }
+	
+	
+#navigation.small-screen #menu-button::after {
+    right: 50%;
+    margin-right: -10px;
+}
+#navigation.small-screen #menu-button::before {
+    right: 50%;
+    margin-right: -10px;
+}
+#navigation.small-screen #menu-button {
+    float: none;
+}
+.navigation {
+    padding-top: 10px;
+}
+
+#navigation, #navigation ul, #navigation ul li, #navigation ul li a, #navigation #menu-button {
+    float: none;
+}
+ #navigation ul ul {
+     top: 0px;
+ }
+
+/*----End:  Menu ----- */
+ 
+.headr_btom_cart {
+    right:-95px;
+    top: 129%;
+    width: 273px;
+}
+
+ .cart-content, .cart-pricing {
+    text-align: left;
+}
+.cart-button ul li a {
+    font-size: 12px;
+    width: 112px;
+}
+.shop_setting_inr {
+    text-align: left;
+}
+
+.search-option form.dropdown-menu {
+    left: -698%;
+}
+
+ 
+ 
+ /*--------------------------------------
+   All Section Padding 
+----------------------------------------*/
+.section{
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+.about-section {
+    padding-bottom: 70px;
+    padding-top: 40px;
+}
+.service_section {
+    padding-top: 40px;
+    padding-bottom: 70px;
+}
+.work-section {
+    padding-top: 40px;
+    padding-bottom: 90px;
+}
+.team_section {
+    padding-bottom: 150px;
+    padding-top: 40px;
+}
+.blog-section {
+    padding-bottom: 50px;
+    padding-top: 40px;
+}
+.pricing-section {
+    padding-bottom: 60px;
+    padding-top: 20px;
+}
+.testimonials-section {
+    padding-bottom: 60px;
+    padding-top: 43px;
+}
+.confacts-section {
+    padding-bottom: 90px;
+}
+.client-section {
+    padding-top: 0px;
+    padding-bottom: 0px;
+	margin-bottom: -25px;
+}
+.contact-section {
+    padding-top: 40px;
+    padding-bottom: 6px;
+}
+.service_page {
+    padding-bottom: 40px !important;
+}
+
+ /*--------------------------------------
+   About  Section
+----------------------------------------*/
+
+.base-header {
+    width: 100%;
+}
+.base-header p::before {
+    width: 240px;
+    left: 50%;
+    margin-left: -120px;
+}
+
+.base-header h3 {
+    line-height: 42px;
+}
+.about_list h5 {
+    letter-spacing: 1px;
+    margin-left: 53px;
+}
+.about_bottom_img img:last-child {
+    display: none;
+}
+.about_bottom_img img:first-child {
+    position: relative;
+    right: 0px;
+    bottom: -4px;
+    margin-top: 10px;
+}
+
+
+.about_bottom_num {
+    top: 30%;
+}
+.about_bottom_list_warp {
+    margin-left: 0px;
+}
+.about_bottom_list_warp h3 {
+    letter-spacing: 2px;
+    line-height: 35px;
+    margin-top: 45px;
+}
+.about_bottom_list {
+    padding-left: 50px;
+	margin-left: 0px;
+}
+.about-section .about_list {
+    background: transparent;
+    margin-bottom: 0px;
+    padding: 10px 0px;
+}
+
+ /*--------------------------------------
+   Service  Section
+----------------------------------------*/
+
+.service_section .base-header {
+    padding-bottom: 40px;
+	text-align: center;
+	width: 100%;
+
+}
+.service_section .base-header p::before, .service_section .base-header p::after {
+    display: block;
+}
+.service_section .more-link {
+    display: none;
+}
+
+
+ /*--------------------------------------
+   Get started Section
+----------------------------------------*/
+.get_started .get_started-text h2 {
+    font-size: 32px;
+    margin-top: -10px;
+    letter-spacing: 2px;
+    line-height: 40px;
+}
+.get_started .get_started-text h4 {
+    letter-spacing: 2px;
+}
+
+
+/*--------------------------------------
+    Work Section
+----------------------------------------*/
+.projects-titles {
+    margin: -25px 0 30px;
+    text-align: left;
+}
+
+.projects-titles li {
+    padding-right: 20px;
+    line-height: 36px;
+}
+
+/*--------------------------------------
+    Team Section
+----------------------------------------*/
+
+.single_team_img {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.team_content {
+    padding-left: 0px;
+}
+.team_content > p {
+    margin-bottom: 25px;
+}
+.single_team_slide3 {
+    padding: 0 2px;
+    margin-top: 10px;
+}
+ 
+.speaker_prev, .speaker_next {
+    bottom: 0%;
+    margin-bottom: -180px;
+}
+
+.speaker_next {
+    left: 50%;
+}
+.speaker_prev {
+    right: 50%;
+}
+
+    /*--------------------------------------
+   video Section     
+----------------------------------------*/
+    
+.play-video {
+    left: 50%;
+    margin-left: -30px;
+}
+.video-content h2 {
+    line-height: 40px;
+}
+
+	
+/*--------------------------------------
+    blog Section
+----------------------------------------*/
+.blog-warp-1 img {
+    height: 100%;
+}
+.blog_content_warp {
+    padding: 0px 15px 20px 15px;
+}
+.blog_datee {
+    top: 0px;
+}
+
+/*--------------------------------------
+   Why Choose Section
+----------------------------------------*/
+.servic_accrodin {
+    padding: 50px 0px 0px 0px;
+}
+#accordion h2 {
+    font-size: 16px;
+    padding: 26px 10px 27px 45px;
+    letter-spacing: 0px;
+}
+.chooseus-section .base-header h3 {
+    margin-bottom: 10px;
+}
+
+
+/*--------------------------------------
+   Pricing  Section
+----------------------------------------*/
+.pricing-box {
+    margin-bottom: 50px;
+}
+.pricing-section .col-sm-3 {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.pricing_heading::before, .pricing_heading::after {
+    display:none;
+}
+.pricing_heading {
+    padding-top: 35px;
+}
+
+
+/*--------------------------------------
+   Facts  Section
+----------------------------------------*/
+.facts_wrapper {
+    margin-right: 0px;
+}
+
+
+
+/*--------------------------------------
+   Contact  Section
+----------------------------------------*/
+.contact-form {
+    margin-top: 50px;
+}
+
+/*--------------------------------------
+   footer  Section
+----------------------------------------*/
+.subfooter .col-xs-6 {
+    width: 100%;
+	text-align: center;
+}
+.scrollup {
+    float: none;
+}
+.subfooter p {
+    margin-left: 0px;
+	float: none;
+}
+.footer-section .widget {
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+}
+.footer-section .widget h5 {
+    margin-bottom: 10px;
+}
+.footer_contact_info {
+    margin-bottom: 25px;
+}
+
+
+/*---- single Page ----- */
+.single_service_page_content .single_service_consult i {
+    width: 100%;
+    padding: 0px;
+}
+.single_service_page_content .single_service_consult a {
+    float: none;
+    margin-top: 20px;
+}
+.single_service_page_content {
+    padding-right: 15px;
+}
+.single_service_section .service_list {
+    margin-bottom: 25px;
+}
+
+ 
+
+/*---- Single Pages----- */
+.widget-area {
+    margin-top: 0px;
+	margin-bottom: 70px;
+}
+.blog-header h3 {
+    font-size: 30px;
+    letter-spacing: 0px;
+    line-height: 40px;
+}
+header .container {
+    padding-top: 100px;
+}
+.post-option {
+    padding: 25px 3px;
+}
+.comments li .comment {
+    padding: 30px 20px 30px;
+}
+.comments li > ul {
+    padding-left: 10px;
+}
+.portfolio-single-detail {
+    margin-top: 43px;
+}
+.single-work-page {
+    padding-top: 90px;
+    padding-bottom: 30px;
+}
+
+.single-work-page .col-xs-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+.blog_page_three .blog-area {
+    padding-right: 15px;
+}
+
+/*---- One Page v1----- */
+.header_top_bg .ban1_txt h3 {
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.header_top_bg .ban1_txt h4 {
+    margin-top: 20px;
+    letter-spacing: 1px;
+}
+
+/*---- Multipage v2----- */
+
+.header_topbar {
+    display: none;
+}
+.navigation_two .header_logo {
+    margin-top: 12px !important;
+    float: none;
+    width: 150px;
+    margin: auto;
+    padding-left: 0;
+}
+
+/*---- All Section Top Bottom Padding v2----- */
+.about_section_v2{
+    padding-bottom: 60px;
+    padding-top: 74px;
+}
+.service_section_v2 {
+    padding-bottom: 70px;
+    padding-top: 73px;
+}
+.about_bottom_v2 {
+    padding-top: 70px;
+    padding-bottom: 40px;
+}
+
+.work_section_v2 {
+    padding-bottom: 73px;
+    padding-top: 70px;
+}
+.team_section_v2 {
+    padding-top: 73px;
+	padding-bottom: 50px;
+}
+.blog_section_v2 {
+    padding-bottom: 50px;
+    padding-top: 73px;
+}
+.pricing-section {
+    padding-bottom: 60px;
+    padding-top: 34px;
+}
+
+.testimonials_section_v2 {
+    padding-top: 73px;
+    padding-bottom: 90px;
+}
+.contact_section_v2 {
+    padding-top: 73px;
+}
+/*---- About ----- */
+ .base_header_v2 p::before, .base_header_v2 p::after {
+    display: none !important;
+}
+ 
+.about_bottom_v2 .col-md-6 {
+    padding-left: 0;
+}
+.about_section_v2 .about_list_warp {
+    margin-top: 20px !important;
+}
+
+.about_bottom_v2 .more-link {
+    margin-bottom: 20px;
+}
+.about_bottom_v2 .about_image_v2 {
+    margin-top: 35px;
+}
+.service_section_v2 .base_header_v2 {
+    text-align: left;
+	width: 100%;
+	padding-bottom: 8px;
+}
+
+
+/*---- Team----- */
+.team_section_v2 {
+    padding-top: 83px;
+}
+
+.team_section_v2 .col-sm-4 {
+    padding-left: 0;
+}
+.team_section_v2 .more-link {
+    margin-bottom: 40px;
+}
+
+
+/*---- Blog----- */
+.blog_section_v2 .base_header_v2 {
+    text-align: left;
+    width: 100%;
+}
+.blog_section_v2 .blog-warp-1 {
+    padding-left: 15px;
+}
+.blog_section_v2 .blog_content_warp {
+    padding: 0px 10px 20px 20px;
+}
+/*---- Pricing----- */
+.pricing_section_v2 .pricing-box {
+    margin-top: 10px;
+}
+.pricing_section_v2 .col-sm-4 {
+    padding-left: 0;
+}
+/*---- Testimonials----- */
+.testimonials_section_v2 .testimonial-box .col-lg-12, .testimonials_section_v2 .testimonial-box .col-lg-3  {
+    padding-left: 0;
+}
+
+.testimonials_section_v2 .more-link {
+    margin-bottom: 40px;
+}
+/*---- Contact----- */
+.contact_section_v2 .contact-form {
+    padding: 50px 25px;
+}
+.contact_section_v2 .contact-form {
+    margin-top: 20px;
+}
+
+/*---- Call to action----- */
+.cta_bottom_v2 h2 {
+    float: none;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+.cta_bottom_v2 .text-right {
+    text-align: center;
+}
+.cta_bottom_v2 .more-link {
+    margin-left: 0px;
+}
+
+}
+
+/* Mobile Vertical Layout: 488px 
+===============================================================================*/
+
+@media only screen and (min-width: 488px) and (max-width: 767px) {
+	
+/*---- Slider----- */
+.single_slider h2 {
+    font-size: 40px;
+}
+.single_slider {
+    font-size: 17px;
+	text-align: center;
+}
+/*---- End: Slider----- */
+
+/*---- About----- */
+.about_bottom_img {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.about-section .about_list {
+    margin-bottom: 0px;
+    padding: 15px 0px;
+}
+.about_para {
+    margin-bottom: 5px;
+}
+/*---- pricing----- */
+.pricing-section .col-xs-12, .confacts-section .col-xs-12, .about_section_v2 .col-xs-12, .team_section_v2 .col-xs-12, .single_service_section .includee_single_service .col-xs-12{
+    width:50%;
+}
+ 
+/*---- Fact ----- */
+.facts_wrapper {
+    margin-bottom: 30px;
+}
+.confacts-section {
+    padding-bottom: 70px;
+}
+/*---- Why CHoose ----- */
+#accordion h2 {
+    font-size: 20px;
+    padding: 28px 10px 27px 45px;
+}
+/*---- client----- */
+.client-section {
+    padding-top: 20px;
+    margin-bottom: -5px;
+}
+/*---- footer----- */
+.footer-section .col-xs-1 {
+    width: 6.667%;
+}
+
+
+/*---- Single Pages----- */
+.instagram-photo-list li {
+    width: 16.33%;
+}
+
+.service_page .col-xs-12{
+    width:50%;
+}
+
+
+}

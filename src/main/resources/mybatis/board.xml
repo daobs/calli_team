@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="board">
+	<delete id="delete" parameterType="int">
+		delete from notice
+		where noticeno = #{noticeno}
+	</delete>
+	<select id="read" resultType="NoticeVO" parameterType="int">
+		select noticeno, title, content, wdate
+		from notice
+		where noticeno = #{noticeno}
+	</select>
+	<update id="upViewcnt" parameterType="int">
+		update notice
+		set viewcnt = viewcnt + 1
+		where noticeno = #{noticeno}
+	</update>
+	<insert id = "create" parameterType="NoticeVO">
+		INSERT INTO notice(title, content, wdate, viewcnt)
+		VALUES(#{title}, #{content}, sysdate(), 0)  
+	</insert>
+	<select id="total" resultType="int" parameterType="Map">
+		select count(*) from notice 
+	<where>
+	    <choose>
+	       <when test="col=='title'">
+	    		title LIKE CONCAT('%', #{word},'%') 
+	       </when>
+	       <when test="col=='content'">
+	       		content LIKE CONCAT('%', #{word},'%')
+	       </when>
+	    </choose>
+   </where>
+	</select>
+	
+	<select id="list" resultType="NoticeVO" parameterType="Map">
+		SELECT noticeno, title, content, wdate, viewcnt 
+			FROM (
+			SELECT noticeno, title, content, wdate, viewcnt 
+				FROM (
+				SELECT noticeno, title, content, wdate, viewcnt 
+				FROM notice 
+	<where>
+      <choose>
+	      <when test="col=='title'">
+	      	title LIKE CONCAT('%', #{word},'%') 
+	      </when>
+	      <when test="col=='content'">
+	      	content LIKE CONCAT('%', #{word},'%')
+	      </when>
+      </choose>
+   </where>
+			)a 
+		)b  order by noticeno desc limit #{sno}, 15
+		    
+	</select>                                                                        
+</mapper>

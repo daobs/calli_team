@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="bbs">
+
+	<update id="update" parameterType="BbsVO">
+		update bbs
+		set
+		title = #{title},
+		content = #{content},
+		wdate = sysdate()
+		where bbsno =
+		#{bbsno}
+	</update>
+	<delete id="delete" parameterType="int">
+		delete from bbs
+		where bbsno =
+		#{bbsno}
+	</delete>
+	<select id="read" resultType="BbsVO" parameterType="int">
+		select bbsno,
+		id, title, content, wdate
+		from bbs
+		where bbsno = #{bbsno}
+	</select>
+	<update id="upViewcnt" parameterType="int">
+		update bbs
+		set viewcnt =
+		viewcnt + 1
+		where bbsno = #{bbsno}
+	</update>
+	<insert id="create" parameterType="BbsVO">
+		INSERT INTO bbs(title,id,
+		content, wdate, viewcnt)
+		VALUES(#{title},#{id}, #{content}, sysdate(),
+		0)
+	</insert>
+	<select id="total" resultType="int" parameterType="Map">
+		select count(*) from bbs
+		<where>
+			<choose>
+				<when test="col=='title'">
+					title LIKE CONCAT('%', #{word},'%')
+				</when>
+				<when test="col=='content'">
+					content LIKE CONCAT('%', #{word},'%')
+				</when>
+			</choose>
+		</where>
+	</select>
+
+	<select id="list" resultType="BbsVO" parameterType="Map">
+		SELECT bbsno, id, title, content, wdate, viewcnt from bbs
+
+		<where>
+			<choose>
+				<when test="col=='title'">
+					title LIKE CONCAT('%', #{word},'%')
+				</when>
+				<when test="col=='content'">
+					content LIKE CONCAT('%', #{word},'%')
+				</when>
+			</choose>
+		</where>
+		order by bbsno desc limit #{sno}, 15
+
+	</select>
+</mapper>

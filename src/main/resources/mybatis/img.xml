@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="img">
+	<update id="updateFile" parameterType="Map">
+		update img set
+		nail_img =
+		#{nail_img}
+		where imgno = #{imgno}
+	</update>
+	<delete id="delete" parameterType="int">
+		delete from img where
+		imgno =
+		#{imgno}
+	</delete>
+	<update id="update" parameterType="ImgDTO">
+		update img
+		set
+		title = #{title},
+		nail_img = #{nail_img},
+		subtitle= #{subtitle},
+		content = #{content},
+		wdate = sysdate(),
+		classes = #{classes},
+		types = #{types}
+		where imgno = #{imgno}
+	</update>
+
+	<update id="upViewcnt" parameterType="int">
+		UPDATE img
+		SET viewcnt =
+		viewcnt + 1
+		WHERE imgno=#{imgno}
+	</update>
+	<select id="read" parameterType="int" resultType="ImgDTO">
+		select imgno,nail_img, title, subtitle,classes, types, content from
+		img
+		where imgno = #{imgno}
+	</select>
+	<select id="total" resultType="int" parameterType="Map">
+		select count(*) from img where classes = #{classes}
+			<if test="col != ''">
+			and types like #{col}
+			</if>
+	
+	</select>
+	<select id="list" parameterType="Map" resultType="ImgDTO">
+		select imgno, nail_img, title, subtitle, types from img
+		where classes = #{classes} 
+		
+	<if test="col != ''">
+			and types like #{col}
+	</if>
+	order by imgno desc
+		
+		 limit ${sno}, 9 
+
+	</select>
+	<insert id="create" parameterType="ImgDTO">
+
+		INSERT INTO img
+		(
+		title,nail_img,subtitle,content,wdate,classes,types)
+		VALUES
+		(#{title},#{nail_img},#{subtitle},#{content},sysdate(),#{classes},#{types});
+
+	</insert>
+</mapper>

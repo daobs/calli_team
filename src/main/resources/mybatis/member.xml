@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="member">
+
+	
+	<update id="upViewcnt" parameterType="int">
+		UPDATE member
+		SET viewcnt =
+		viewcnt + 1
+		WHERE id=#{id}
+	</update>
+	
+<select id="total" resultType="int" parameterType="Map">
+		select count(*) from member
+	<where>
+	    <choose>
+	       <when test="col=='id'">
+	    		id LIKE CONCAT('%', #{word},'%') 
+	       </when>
+	       <when test="col=='email'">
+	       		email LIKE CONCAT('%', #{word},'%')
+	       </when>
+	    </choose>
+   </where>
+	</select>
+
+	
+	<select id="list" resultType="MemberVO" parameterType="Map">
+		SELECT id, email, name, phone,zipcode,address1,address2,grade,receive,interest,wdate 
+			FROM member
+	<where>
+      <choose>
+	      <when test="col=='id'">
+	      	id LIKE CONCAT('%', #{word},'%') 
+	      </when>
+	      <when test="col=='email'">
+	      	email LIKE CONCAT('%', #{word},'%')
+	      </when>
+	       <when test="col=='name'">
+	      	name LIKE CONCAT('%', #{word},'%')
+	      </when>
+      </choose>
+   </where>
+	
+		 order by wdate desc limit #{sno}, 20
+		    
+	</select>                
+
+
+
+	<insert id="create" parameterType="MemberVO">
+		INSERT INTO member(id, passwd,
+		name, phone, email, zipcode,address1,address2, come, receive,
+		interest, grade, wdate)
+		VALUES(#{id}, #{passwd}, #{name}, #{phone},#{email},
+		#{zipcode},#{address1},#{address2},#{come}, #{receive}, #{interest},
+		'C', now())
+	</insert>
+
+	<select id="duplicateId" parameterType="String" resultType="int">
+		select count(id) as cnt
+		from member
+		where id=#{id}
+	</select>
+
+	<select id="duplicateEmail" parameterType="String" resultType="int">
+		select count(email) as cnt
+		from member
+		where email=#{email}
+	</select>
+	<select id="duplicate_UpEmail" parameterType="Map" resultType="int">
+		select count(*) from (
+		select id
+		from memberloginCheck
+		where email= #{email}
+		) as tb1
+		where #{id} = tb1.id
+	</select>
+	<select id="loginCheck" parameterType="String" resultType="int">
+/* member.loginCheck*/
+		select count(*)
+		from member
+		where id= #{id}
+		and passwd= #{passwd}
+	</select>
+	<select id="getGrade" parameterType="String" resultType="String">
+		select
+		grade from member
+		where id = #{id}
+	</select>
+	<select id="read" parameterType="String" resultType="MemberVO">
+		SELECT id, passwd, name, email, name, phone, zipcode, address1, address2,
+		receive
+		FROM member where id= #{id}
+	</select>
+	<select id="updateMember" parameterType="MemberVO">
+		UPDATE member
+		SET
+		grade = #{grade}
+		WHERE id = #{id}
+	</select>
+	<select id="update" parameterType="MemberVO">
+		UPDATE member
+		SET
+		passwd = #{passwd},
+		email = #{email},
+		name = #{name},
+		phone = #{phone},
+		zipcode = #{zipcode},
+		address1 = #{address1},
+		address2 = #{address2},
+		receive = #{receive}
+		WHERE id = #{id}
+	</select>
+		<select id="updatePasswd" parameterType="MemberVO">
+		UPDATE member
+		SET
+		passwd = #{passwd}
+		WHERE id = #{id}
+	</select>
+	<delete id="delete" parameterType="String">
+		delete from member
+		where id =
+		#{id}
+	</delete>
+	<select id="passwdCheck" parameterType="Map" resultType="int">
+		select
+		count(*) from member
+		where id = #{id}
+		and passwd = #{passwd}
+	</select>
+	<select id="findId" parameterType="Map" resultType="String">
+		select id
+		from member
+		where name = #{name}
+		and email = #{email}
+	</select>
+	<select id="findPw" parameterType="Map" resultType="String">
+		select passwd
+		from member
+		where id = #{id}
+		and email = #{email}
+	</select>
+</mapper>

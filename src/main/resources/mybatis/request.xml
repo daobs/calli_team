@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="request">
+	<delete id="delete" parameterType="int">
+		delete from request
+		where requestno = #{requestno}
+	</delete>
+	<select id="read" resultType="RequestDTO" parameterType="int">
+		select *
+		from request
+		where requestno = #{requestno}
+	</select>
+	
+	<insert id = "create" parameterType="RequestDTO">
+		INSERT INTO request( part, part2,part3, period_s, period_end,company_name,grade,name,position,company_tel,phone,fax,email,wdate,content,logo_name)
+		VALUES(#{part}, #{part2},#{part3},str_to_date(#{period_s}, '%Y-%m-%d'), str_to_date(#{period_end}, '%Y-%m-%d'),#{company_name},#{grade},#{name},#{position},#{company_tel},#{phone},#{fax},#{email},sysdate(),#{content},#{logo_name})  
+		 
+		 
+	</insert>
+	<select id="total" resultType="int" parameterType="Map">
+		select count(*) from request 
+	<where>
+	    <choose>
+	       <when test="col=='title'">
+	    		title LIKE CONCAT('%', #{word},'%') 
+	       </when>
+	       <when test="col=='content'">
+	       		content LIKE CONCAT('%', #{word},'%')
+	       </when>
+	    </choose>
+   </where>
+	</select>
+	
+	<select id="list" resultType="RequestDTO" parameterType="Map">
+		SELECT requestno, name, logo_name,phone,wdate from request
+	 order by requestno desc limit #{sno}, 15
+		    
+	</select>                                                                        
+</mapper>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+ 
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="reply">
+	<select id="total" resultType="int">
+		select count(*) from reply
+		where bbsno=#{bbsno}
+	</select>
+	<insert id="create" parameterType="replyDTO">
+
+		insert into reply(rnum, content, regdate, id, bbsno, thumnail)
+		values(#{rnum}, #{content}, sysdate(), #{id}, #{bbsno}, #{thumnail})
+	</insert>
+
+	<select id="read" parameterType="int" resultType="replyDTO">
+		select * from reply
+		where rnum = #{rnum}
+	</select>
+
+	<update id="update" parameterType="replyDTO">
+		update reply
+		set content = #{content}
+		where rnum = #{rnum}
+
+	</update>
+
+	<delete id="delete" parameterType="int">
+		delete from reply
+		where rnum = #{rnum}
+	</delete>
+	<delete id="bdelete" parameterType="int">
+		delete from reply
+		where bbsno = #{bbsno}
+	</delete>
+	<select id="list" parameterType="Map" resultType="replyDTO">
+		select rnum, content,regdate, id,
+		bbsno, thumnail
+		from reply
+		where bbsno = #{bbsno}
+		order by rnum DESC limit #{sno}, 10
+		
+	</select>
+
+</mapper>

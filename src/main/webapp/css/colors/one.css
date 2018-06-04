@@ -1,0 +1,218 @@
+  .base-header p::after {
+     background: #D4B068;
+ }
+  .more-link {
+     background: #D4B068;
+ }
+  .owl-nav div:hover {
+     background: #D4B068;
+     border: 2px solid #D4B068;
+ }
+  .top_location i::before {
+     color: #D4B068;
+ }
+ .header_quate_right {
+     border: 1px solid #D4B068;
+     background: #D4B068;
+ }
+ .header_quate_right:hover {
+     color: #D4B068;
+ }
+  .cart-inner {
+     background: #D4B068;
+ }
+  .cart-title:hover {
+     color: #D4B068;
+ }
+  .header-cart .action i:hover {
+     color: #D4B068;
+ }
+ .header-right ul li i:hover {
+     color: #D4B068;
+ }
+  .shop_setting_inr a:hover {
+     color: #D4B068;
+ }
+  .cart-button ul li a {
+     border: 1px solid #D4B068;
+     background: #D4B068;
+ }
+  #navigation > ul > li > .active {
+     color: #D4B068;
+ }
+ #navigation > ul > li:hover > a {
+     color: #D4B068;
+ }
+  #navigation ul ul li:hover > a,
+ #navigation ul ul li a:hover {
+     background: #D4B068;
+ }
+  .slider_home span {
+     color: #D4B068;
+ }
+  .slider_btn_one {
+     background: #D4B068;
+ }
+  .slider_btn_two:hover {
+     background: #D4B068;
+ }
+  .about_list .icon-fea::before {
+     color: #D4B068;
+ }
+  .about_bottom_list i {
+     color: #D4B068;
+ }
+
+ .about_bottom_list p span {
+     color: #D4B068;
+ }
+  .whoffer-mask a {
+     color: #D4B068;
+ }
+  .projects-titles li:hover {
+     color: #D4B068;
+ }
+ .projects-titles li.active {
+     color: #D4B068;
+ }
+  .team_social_link a {
+     background: #D4B068;
+ }
+  .speaker_prev {
+     background: #D4B068;
+ }
+ .speaker_next {
+     background: #D4B068;
+ }
+  .play-video {
+     border: 1px solid #D4B068;
+     background: #D4B068;
+ }
+  .blog_datee p {
+     background: #D4B068;
+ }
+  #accordion section:not(.ac_hidden) .pointer {
+     color: #D4B068;
+     border: 1px solid #D4B068;
+ }
+  .pricing-box a {
+     background: #D4B068;
+ }
+  .testimonials-section .owl-theme .owl-controls .owl-dot.active span {} .testimonials-section .owl-theme .owl-controls .owl-dot span {
+     color: #D4B068;
+ }
+ .testi_social {
+     background: #D4B068;
+ }
+  .contact-form #contact-form .con-field,
+ .contact-form #comment-form .con-field,
+ .comment-form #contact-form .con-field,
+ .comment-form #comment-form .con-field {
+     border-color: -moz-use-text-color -moz-use-text-color #D4B068;
+ }
+ 
+  .contact-form #contact-form #submit-contact,
+ .contact-form #comment-form #submit-contact,
+ .comment-form #contact-form #submit-contact,
+ .comment-form #comment-form #submit-contact {
+     background: #D4B068;
+ }
+ 
+  .scrollup:hover,
+ .scrollup:active,
+ .scrollup:focus {
+     color: #D4B068;
+ }
+  .pager li a {
+     border: 1px solid #D4B068;
+     background: #D4B068;
+ }
+  .widget-search .input-group button {
+     color: #D4B068;
+ }
+ .input-group-btn {
+     left: 0px;
+ }
+ /* - Widget Title */
+ 
+.widget .widget-title {
+    background: #D4B068;
+}
+ .widget-tags > a:hover {
+    border-color: #D4B068;
+    background: #D4B068;
+}
+ 
+  .comments li .comment span.comment-reply a {
+     border: 1px solid #D4B068;
+ }
+ .comments li .comment span.comment-reply a:hover {
+     background: #D4B068;
+ }
+  .form-control:focus {
+     border: 1px solid #D4B068;
+     border-bottom: 3px solid #D4B068;
+ }
+ #contactForm .submit-button:hover {
+     color: #D4B068;
+     border: 3px solid #D4B068;
+ }
+ #contactForm .submit-button {
+     background: #D4B068;
+     border: 3px solid #D4B068;
+ }
+  .post-option .prev-post:hover,
+ .post-option .next-post:hover {
+     color: #D4B068;
+ }
+
+ .post-option .middle-icon a {
+     color: #D4B068;
+ }
+  .portfolioitem .carousel-control {
+     background: #D4B068;
+ }
+  .social-icons > li > a i:hover {
+     color: #D4B068
+ }
+ 
+ 
+ .service_page .whoffer-mask a {
+    color: #D4B068;
+}
+ .single_service_category .active a {
+    color: #D4B068;
+}
+   #navigation ul li .current {
+      background: #D4B068;
+  }  
+  .single-page-nav ul li a:hover {
+      background: #D4B068;
+  }
+ .base_header_v2 small {
+    color: #D4B068;
+}
+ .work_section_v2 .projects-titles li.active {
+    color: #D4B068;
+}
+ .contact_section_v2 .contact-form {
+    background: #D4B068;
+}
+.contact_section_v2 .contact-form #contact-form .con-field{
+    background: #D4B068;
+}
+.contact_section_v2 .contact-form #contact-form #submit-contact{
+    color: #D4B068;
+}
+ .team_section_v2 .member_img {
+  border-bottom: 4px solid #D4B068;
+}
+.team_section_v2 .team_social {
+    background: #D4B068;
+}
+ .header_bg_onepage_v2 .ban1_txt h3 span{
+    color: #D4B068;
+}
+.single_service_category ul li a:hover {
+    color: #D4B068;
+}

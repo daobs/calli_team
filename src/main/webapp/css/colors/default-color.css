@@ -1,0 +1,218 @@
+ .base-header p::after {
+     background: #038FD6;
+ }
+  .more-link {
+     background: #038FD6;
+ }
+  .owl-nav div:hover {
+     background: #038FD6;
+     border: 2px solid #038FD6;
+ }
+  .top_location i::before {
+     color: #038FD6;
+ }
+ .header_quate_right {
+     border: 1px solid #038FD6;
+     background: #038FD6;
+ }
+ .header_quate_right:hover {
+     color: #038FD6;
+ }
+  .cart-inner {
+     background: #038FD6;
+ }
+  .cart-title:hover {
+     color: #038FD6;
+ }
+  .header-cart .action i:hover {
+     color: #038FD6;
+ }
+ .header-right ul li i:hover {
+     color: #038FD6;
+ }
+  .shop_setting_inr a:hover {
+     color: #038FD6;
+ }
+  .cart-button ul li a {
+     border: 1px solid #038FD6;
+     background: #038FD6;
+ }
+  #navigation > ul > li > .active {
+     color: #038FD6;
+ }
+ #navigation > ul > li:hover > a {
+     color: #038FD6;
+ }
+  #navigation ul ul li:hover > a,
+ #navigation ul ul li a:hover {
+     background: #038FD6;
+ }
+  .slider_home span {
+     color: #038FD6;
+ }
+  .slider_btn_one {
+     background: #038FD6;
+ }
+  .slider_btn_two:hover {
+     background: #038FD6;
+ }
+  .about_list .icon-fea::before {
+     color: #038FD6;
+ }
+  .about_bottom_list i {
+     color: #038FD6;
+ }
+
+ .about_bottom_list p span {
+     color: #038FD6;
+ }
+  .whoffer-mask a {
+     color: #038FD6;
+ }
+  .projects-titles li:hover {
+     color: #038FD6;
+ }
+ .projects-titles li.active {
+     color: #038FD6;
+ }
+  .team_social_link a {
+     background: #038FD6;
+ }
+  .speaker_prev {
+     background: #038FD6;
+ }
+ .speaker_next {
+     background: #038FD6;
+ }
+  .play-video {
+     border: 1px solid #038FD6;
+     background: #038FD6;
+ }
+  .blog_datee p {
+     background: #038FD6;
+ }
+  #accordion section:not(.ac_hidden) .pointer {
+     color: #038FD6;
+     border: 1px solid #038FD6;
+ }
+  .pricing-box a {
+     background: #038FD6;
+ }
+  .testimonials-section .owl-theme .owl-controls .owl-dot.active span {} .testimonials-section .owl-theme .owl-controls .owl-dot span {
+     color: #038FD6;
+ }
+ .testi_social {
+     background: #038FD6;
+ }
+  .contact-form #contact-form .con-field,
+ .contact-form #comment-form .con-field,
+ .comment-form #contact-form .con-field,
+ .comment-form #comment-form .con-field {
+     border-color: -moz-use-text-color -moz-use-text-color #038FD6;
+ }
+ 
+  .contact-form #contact-form #submit-contact,
+ .contact-form #comment-form #submit-contact,
+ .comment-form #contact-form #submit-contact,
+ .comment-form #comment-form #submit-contact {
+     background: #038FD6;
+ }
+ 
+  .scrollup:hover,
+ .scrollup:active,
+ .scrollup:focus {
+     color: #038FD6;
+ }
+  .pager li a {
+     border: 1px solid #038FD6;
+     background: #038FD6;
+ }
+  .widget-search .input-group button {
+     color: #038FD6;
+ }
+ .input-group-btn {
+     left: 0px;
+ }
+ /* - Widget Title */
+ 
+.widget .widget-title {
+    background: #038FD6;
+}
+ .widget-tags > a:hover {
+    border-color: #038FD6;
+    background: #038FD6;
+}
+ 
+  .comments li .comment span.comment-reply a {
+     border: 1px solid #038FD6;
+ }
+ .comments li .comment span.comment-reply a:hover {
+     background: #038FD6;
+ }
+  .form-control:focus {
+     border: 1px solid #038FD6;
+     border-bottom: 3px solid #038FD6;
+ }
+ #contactForm .submit-button:hover {
+     color: #038FD6;
+     border: 3px solid #038FD6;
+ }
+ #contactForm .submit-button {
+     background: #038FD6;
+     border: 3px solid #038FD6;
+ }
+  .post-option .prev-post:hover,
+ .post-option .next-post:hover {
+     color: #038FD6;
+ }
+
+ .post-option .middle-icon a {
+     color: #038FD6;
+ }
+  .portfolioitem .carousel-control {
+     background: #038FD6;
+ }
+  .social-icons > li > a i:hover {
+     color: #038FD6
+ }
+ 
+ 
+ .service_page .whoffer-mask a {
+    color: #038FD6;
+}
+ .single_service_category .active a {
+    color: #038FD6;
+}
+   #navigation ul li .current {
+      background: #038FD6;
+  }  
+  .single-page-nav ul li a:hover {
+      background: #038FD6;
+  }
+ .base_header_v2 small {
+    color: #038FD6;
+}
+ .work_section_v2 .projects-titles li.active {
+    color: #038FD6;
+}
+ .contact_section_v2 .contact-form {
+    background: #038FD6;
+}
+.contact_section_v2 .contact-form #contact-form .con-field{
+    background: #038FD6;
+}
+.contact_section_v2 .contact-form #contact-form #submit-contact{
+    color: #038FD6;
+}
+ .team_section_v2 .member_img {
+  border-bottom: 4px solid #038FD6;
+}
+.team_section_v2 .team_social {
+    background: #038FD6;
+}
+ .header_bg_onepage_v2 .ban1_txt h3 span{
+    color: #038FD6;
+}
+.single_service_category ul li a:hover {
+    color: #038FD6;
+}
