@@ -39,7 +39,6 @@ function list(col){
 }
 
 $("#b").click(function() {
-    alert('클릭');
     portPolioList();
 });
 
