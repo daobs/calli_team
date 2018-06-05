@@ -38,11 +38,6 @@ function list(col){
 	location.href = url;
 }
 
-$("#b").click(function() {
-    portPolioList();
-});
-
-
 function portPolioList(types) {
     var url = 'json?col='+types;
     $.ajax({
